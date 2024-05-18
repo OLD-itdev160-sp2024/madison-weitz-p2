@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="description" content="description goes here">
+    <meta name="keywords" content="Keywords go here, key, word">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/contactstyle.css" rel="stylesheet">
+	<link rel="icon" href="images/logo.ico" type="image/png">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+	<script src="js/additional-methods.min.js"></script>
+	<script src="js/contact.js"></script>
+	<style>
+	#contact_form {
+		width: 30.25em;
+    	margin: 0 auto;
+	}
+
+	label {
+		float: left;
+    	width: 12.9em;
+   	 	text-align: right;
+	}
+	input, select, textarea {
+    	margin-left: 1em;
+    	margin-right: 1em;
+    	margin-bottom: .25em;
+	}
+	#buttons input {
+		width: 7em;
+	}
+
+	fieldset {
+    	margin-top: 1em;
+    	margin-bottom: 1em;
+    	padding-top: .75em;
+    	padding-inline-end: 4em;
+	}
+	legend {
+    	color: #000000;
+    	font-weight: bold;
+    	font-size: 100%;
+    	margin-bottom: .5em;
+	}
+	label.error {
+		float: none;
+		color: red;
+		font-size: 87.5%;
+	}
+
+	/*Validations icons for HTML5 attributes */
+	input:required:invalid {
+    	background-image: url(images/required.png);
+    	background-position: right top;
+    	background-repeat: no-repeat;
+	}
+	input:focus:invalid {
+    	background-image: url(images/invalid.png);
+    	background-position: right top;
+    	background-repeat: no-repeat;
+	}
+	input:required:valid {
+    	background-image: url(images/valid.png);
+    	background-position: right top;
+    	background-repeat: no-repeat;
+	}
+	</style>
+</head>
+<body>
+<main>
+    <section id="header"><!-- HEADER -->
+		<nav><!--NAVBAR (don't delete 2nd nav for spacing)-->
+			<div class="wrapper">
+			<nav>
+			  <div class="wrapper">
+				<div class="logo"><a href="#">Hare &amp; Hatter Vintage</a></div>
+				<input type="radio" name="slider" id="menu-btn">
+				<input type="radio" name="slider" id="close-btn">
+				<ul class="nav-links">
+				  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+				  <li><a href="index.html"><span>Home</span></a></li>
+				  <li>
+					  <a href="shop.html" class="desktop-item">Shop</a>
+					  <input type="checkbox" id="showMega">
+					  <label for="showMega" class="mobile-item" style="text-align: left;">Shop</label>
+					  <div class="mega-box">
+						<div class="content">
+						  <div class="row">
+							<img src="images/logo.png" alt="ring">
+						  </div>
+						  <div class="row">
+							<header>Rings</header>
+							<ul class="mega-links">
+							  <li><a href="shop.html">Silver</a></li>
+							  <li><a href="shop.html">Gold</a></li>
+							  <li><a href="shop.html">Platinum</a></li>
+							  <li><a href="shop.html">Gemstones</a></li>
+							</ul>
+						  </div>
+						  <div class="row">
+							<header>Bracelets</header>
+							<ul class="mega-links">
+								<li><a href="shop.html">Silver</a></li>
+								<li><a href="shop.html">Gold</a></li>
+								<li><a href="shop.html">Gemstones</a></li>
+								<li><a href="shop.html">Costume</a></li>
+							</ul>
+						  </div>
+						  <div class="row">
+							<header>Necklaces</header>
+							<ul class="mega-links">
+							  <li><a href="shop.html">Silver</a></li>
+							  <li><a href="shop.html">Gold</a></li>
+							  <li><a href="shop.html">Gemstones</a></li>
+							  <li><a href="shop.html">Costume</a></li>
+							</ul>
+						  </div>
+						</div>
+					  </div>
+					</li>
+				    <li><a href="blog.html"><span>Blog</span></a></li>
+				    <li><a href="about.html"><span>About</span></a></li>
+				    <li><a href="contact.html"><span>Contact</span></a></li> 
+				</ul>
+				<label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+			  </div>  
+		</nav> 
+	</section>
+    <section>
+        <h1>Contact Us</h1>
+        <form action="sendmail.php" method="post" name="contact_form" id="contact_form">
+            
+        <fieldset>
+        	<legend>Your Contact Information</legend>
+    		<label for="first_name">First Name:</label>
+			<input type="text" name="first_name" id="first_name" autofocus><br>
+			<label for="last_name">Last Name:</label>
+			<input type="text" name="last_name" id="last_name"><br>
+        	<label for="email">Email Address:</label>
+        	<input type="email" name="email" id="email"><br>
+        	<label for="verify">Verify Email:</label>
+        	<input type="email" name="verify" id="verify"><br>
+			<label for="phone">Phone Number:</label>
+			<input type="tel" name="phone" id="phone" placeholder="999-999-9999"><br>
+		</fieldset>
+		<fieldset>
+    		<legend>Message Information</legend>
+			<label for="today_date">Today's  Date:</label>
+			<input type="date" name="today_date" id="today_date" placeholder="99/99/9999"><br>
+			<label for="subject">Subject:</label>
+			<input type="text" name="subject" id="subject"><br>
+			<label for="Message">Message:</label>
+			<textarea id="message" name="message" rows="4"></textarea>
+		</fieldset>
+		<fieldset id="buttons">
+			<legend>Submit Your Email Message</legend>
+			
+			<input type="submit" id="submit" value="Send">
+			<input type="reset" id="reset" value="Reset"><br>
+			<label>&nbsp;</label>
+		</fieldset>
+        
+        </form>
+    </section>
+    <footer class="section-p1">
+		<div class="col">
+		  <img class="logo" src="images/logo.png" alt="logo">
+		</div>
+		<div class="col">
+		  <h4>Contact</h4>
+		  <p><strong>Address:</strong> 723 Meadow Square, LA, 1234 </p>
+		  <p><strong>Phone: </strong>+01 1234 987 </p>
+		  <p><strong>Hours: </strong> 11:00 am - 6:00 pm, Mon. - Fri.</p>
+		</div>
+		<div class="col">
+		  <h4>About</h4>
+		  <a href="about.html">About Us</a>
+		  <a href="#">Privacy Policy</a>
+		  <a href="#">Terms & Conditions</a>
+		  <a href="contact.html">Contact Us</a>
+		</div>
+		<div class="col">
+		  <h4>My Account</h4>
+		  <a href="#">Sign In</a>
+		  <a href="#">View Cart</a>
+		  <a href="#">View Wishlist</a>
+		</div>
+	
+		<div class="copyright">
+		  <p>Copyright &copy; 2024</p>
+		</div>
+	  </footer>
+</main>
+<script>
+</script>
+</body>
+</html>

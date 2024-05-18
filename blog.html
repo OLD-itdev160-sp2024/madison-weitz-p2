@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hare & Hatter Blog</title>
+    <meta charset="utf-8">
+    <meta name="description" content="description goes here">
+    <meta name="keywords" content="Keywords go here, key, word">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+	<link rel="icon" href="images/logo.ico" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+    }
+
+    .leftcolumn {   
+        float: left;
+        width: 75%;
+    }
+
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        padding-left: 20px;
+    }
+
+    #blog-img {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other*/
+    @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+    <section id="header" 
+    style="transform: translateY(-40px);"><!-- HEADER/NAV -->
+        <nav><!--NAVBAR (don't delete 2nd nav for spacing)-->
+            <div class="wrapper">
+            <nav>
+              <div class="wrapper">
+                <div class="logo"><a href="#">Hare &amp; Hatter Vintage</a></div>
+                <input type="radio" name="slider" id="menu-btn">
+                <input type="radio" name="slider" id="close-btn">
+                <ul class="nav-links">
+                  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                  <li><a href="index.html"><span>Home</span></a></li>
+                  
+                  <li>
+                      <a href="shop.html" class="desktop-item">Shop</a>
+                      <input type="checkbox" id="showMega">
+                      <label for="showMega" class="mobile-item">Shop</label>
+                      <div class="mega-box">
+                        <div class="content">
+                          <div class="row">
+                            <img src="images/logo.png" alt="ring">
+                          </div>
+                          <div class="row">
+                            <header>Rings</header>
+                            <ul class="mega-links">
+                              <li><a href="shop.html">Silver</a></li>
+                              <li><a href="shop.html">Gold</a></li>
+                              <li><a href="shop.html">Platinum</a></li>
+                              <li><a href="shop.html">Gemstones</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Bracelets</header>
+                            <ul class="mega-links">
+                                <li><a href="shop.html">Silver</a></li>
+                                <li><a href="shop.html">Gold</a></li>
+                                <li><a href="shop.html">Gemstones</a></li>
+                                <li><a href="shop.html">Costume</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <header>Necklaces</header>
+                            <ul class="mega-links">
+                              <li><a href="shop.html">Silver</a></li>
+                              <li><a href="shop.html">Gold</a></li>
+                              <li><a href="shop.html">Gemstones</a></li>
+                              <li><a href="shop.html">Costume</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  <li><a href="blog.html"><span>Blog</span></a></li>
+                  <li><a href="about.html"><span>About</span></a></li>
+                  <li><a href="contact.html"><span>Contact</span></a></li> 
+                </ul>
+                <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+              </div>  
+        </nav> 
+    </section>
+    <!-- Small Hero/Banner -->
+    <section id="banner" class="section-m1" >
+    <h1>Blog</h1>
+    <div class="underline"></div>
+    </section>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Antique or Vintage?</h2>
+      <h5>The timeline difference between 2 key descriptors in historical jewelry searching, February 7, 2024</h5>
+      <div id="blog-img">
+        <img src="images/blog1.jpg" alt="antique jewelry with victorian cameo & pearls lot">
+      </div >
+      <p>The difference between antique and vintage jewelry primarily lies in their age.
+        <br><br>Antique Jewelry: This term refers to jewelry that is over 100 years old. Antique pieces are often handcrafted with a high level of craftsmanship and are valued for their historical significance and unique designs.
+        <br>Vintage Jewelry: Vintage jewelry is generally defined as pieces that are at least 20 to 99 years old. These items reflect the style and trends of the era they were made in and can include a wide range of styles from different decades.
+        <br>Both antique and vintage jewelry can be considered estate jewelry if they have been previously owned, regardless of their age1. When shopping for such pieces, it's important to consider their condition, rarity, and provenance, as these factors can influence their value and appeal.
+        <br>
+        Remember, the distinction between antique and vintage can affect not only the value but also how you care for the jewelry, as older pieces may require more delicate handling
+      </p>
+    </div>
+    <div class="card">
+      <h2>Finding Your Undertone</h2>
+      <h5>How to best determine whether you are fit for silver or gold jewelry, March 25, 2024</h5>
+      <div id="blog-img">
+        <img src="images/blog2.jpg" alt="woman with jewelry">
+      </div>
+      <p>Determine Your Skin Undertone:
+        <br>Cool Undertones: Look for bluish, purplish, or reddish hues beneath your skin. Jewelry in silver, platinum, and white gold, as well as gemstones like sapphire, amethyst, and emerald, will enhance your natural coolness.
+        <br>Warm Undertones: If you have yellowish or golden hues underneath your skin, opt for gold-toned metals like yellow gold, rose gold, and bronze, and gemstones such as citrine, fire opal, and golden pearls.
+        <br>Neutral Undertones: You're lucky to have a balanced mix of cool and warm hues, meaning most jewelry colors will suit you. You can wear both cool and warm-toned jewelry.
+        <br>Metals: Silver and white gold flatter cool undertones, while yellow and rose gold are perfect for warm undertones. Neutral undertones can experiment with all metal colors.
+        Gemstones: Bright, vivid stones like ruby, emerald, and sapphire complement cool undertones, whereas earthy colors like turquoise and citrine are great for warm undertones.
+        </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div>
+        <img src="images/blog4.jpg" alt="woman with jewelry">
+      </div>
+      <p>Hello and welcome to my blog! I write all there is to know about the lost art of vintage jewelry. I hope both those who share my love for this art and newcomers alike enjoy the information and articles there are to read!</p>
+    </div>
+    <div class="card">
+      <h3>Popular Posts</h3>
+      <div>
+        <img src="images/blog3.jpg" alt="woman with jewelry">
+        <p>Antique Shopping 101</p>
+      </div><br>
+      <div>
+        <img src="images/blog5.jpg" alt="woman with jewelry">
+        <p>The History of Victorian Mourning Rings</p>
+      </div><br>
+    </div>
+    <div class="card">
+      <h3>Follow Us</h3>
+      <p>
+        Find our shop and more content across Facebook, LinkedIn, and Instagram <br> <strong>@ Hare & Hatter Vintage!</strong>
+      </p>
+    </div>
+  </div>
+</div>
+<footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="images/logo.png" alt="logo">
+    </div>
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 723 Meadow Square, LA, 1234 </p>
+      <p><strong>Phone: </strong>+01 1234 987 </p>
+      <p><strong>Hours: </strong> 11:00 am - 6:00 pm, Mon. - Fri.</p>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">View Wishlist</a>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright &copy; 2024</p>
+    </div>
+</footer>
+</body>
+</html>
